@@ -1,0 +1,37 @@
+.sideNav {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 25vw;
+  text-align: center;
+  background: #0b1f33;
+}
+
+.searchDetails {
+  text-align: center;
+  height: 100vh;
+}
+/* ScrollBar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px tan;
+  border-radius: 7px;
+  background-color: tan;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #191b2a;
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1f2235;
+}
