@@ -37,7 +37,7 @@ const NavbarHeader = ({
             </select>
             <Form.Control
               type="search"
-              placeholder="Enter text to serach"
+              placeholder="Enter search text"
               className="me-4"
               aria-label="Search"
               style={{ width: "auto" }}
