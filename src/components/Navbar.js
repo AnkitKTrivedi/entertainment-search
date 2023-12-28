@@ -13,7 +13,11 @@ const NavbarHeader = ({
   onCategorySelect,
   onSearchTextChange,
   onSearchClick,
+  selectedCategory,
+  searchText,
 }) => {
+  const isSearchDisabled =
+    !selectedCategory || selectedCategory === "Select Category";
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -37,13 +41,20 @@ const NavbarHeader = ({
             </select>
             <Form.Control
               type="search"
-              placeholder="Enter search text"
+              placeholder={
+                isSearchDisabled ? "Select category first" : "Enter search text"
+              }
               className="me-4"
               aria-label="Search"
               style={{ width: "auto" }}
               onChange={onSearchTextChange}
+              disabled={isSearchDisabled}
             />
-            <Button variant="outline-success" onClick={onSearchClick}>
+            <Button
+              variant="outline-success"
+              onClick={onSearchClick}
+              disabled={!searchText}
+            >
               Search
             </Button>
           </Form>

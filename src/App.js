@@ -48,6 +48,8 @@ function App() {
         onCategorySelect={onCategorySelect}
         onSearchTextChange={onSearchTextChange}
         onSearchClick={onSearchClick}
+        selectedCategory={selectedCategory}
+        searchText={searchText}
       />
       <Container className="d-flex fluid">
         <SearchList>
