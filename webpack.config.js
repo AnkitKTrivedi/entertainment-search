@@ -49,7 +49,7 @@ module.exports = {
       favicon: "./public/favicon.ico",
     }),
     new DotenvW({
-      path: ".env",
+      path: "./.env.production",
     }),
   ],
   mode: "production",
