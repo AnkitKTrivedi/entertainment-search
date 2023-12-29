@@ -13,11 +13,7 @@ function App() {
   const [searchText, setSearchText] = useState("");
   const [listData, setListData] = useState([]);
   const [selectedData, setSelectedData] = useState();
-  console.log(
-    "process.env.REACT_APP_BASE_URL",
-    process.env,
-    process.env.REACT_APP_BASE_URL
-  );
+
   const onCategorySelect = (event) => {
     setSelectedCategory(event.target.value);
     setListData([]);
